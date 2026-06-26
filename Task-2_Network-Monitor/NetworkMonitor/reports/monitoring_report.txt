@@ -1,0 +1,29 @@
+============================================================
+  NETWORK MONITORING & LOG ANALYSIS REPORT
+============================================================
+Generated    : 2026-06-26 10:51:29
+Total Logs   : 131
+Valid Records: 131
+Corrupted    : 1
+Unique IPs   : 32
+Peak Hour    : 09:00
+Top Active IP: 192.168.2.1 (87 reqs)
+Total Alerts : 5
+Critical     : 2
+
+SECURITY FINDINGS:
+  [!] 2 CRITICAL alerts detected.
+  [!] Brute force attempts from 2 IP(s).
+
+RECOMMENDATIONS:
+  -> Block IPs with repeated failed logins immediately.
+  -> Review all CRITICAL alerts within 1 hour.
+  -> Update blocked IP list regularly.
+
+ALERT DETAILS:
+  [2000] BRUTE_FORCE | HIGH | 192.168.1.13 | IP 192.168.1.13 had 6 failed login attempts
+  [2001] BRUTE_FORCE | HIGH | 192.168.4.4 | IP 192.168.4.4 had 5 failed login attempts
+  [3000] TRAFFIC_SPIKE | MEDIUM | N/A | Hour 09:00 had 87 requests (avg=10)
+  [4000] BLOCKED_IP_ACCESS | CRITICAL | 10.0.0.99 | Blocked IP 10.0.0.99 attempted access
+  [4001] BLOCKED_IP_ACCESS | CRITICAL | 172.16.0.50 | Blocked IP 172.16.0.50 attempted access
+============================================================
